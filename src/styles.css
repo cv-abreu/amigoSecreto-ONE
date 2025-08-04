@@ -1,0 +1,65 @@
+html{
+    width:auto;
+    margin:0;
+    overflow:scroll;
+    height:auto;
+    background-image:url('background.png');
+    background-color:rgb(16, 14, 33);
+}
+
+.container{
+    position:static;
+    justify-self:center;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.536);
+    width:100%;
+    height:fit-content;
+    padding:15px;
+    box-shadow: 2px 5px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+h1{
+    font-size:500%;
+    text-shadow: 3px 2px 6px white;
+    color:rgb(240, 239, 239);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+input{
+    border-radius:10px;
+    font-size:200%;
+    padding:10px;
+    background-color:rgba(0, 0, 0, 0);
+    border: blueviolet;
+    border-style:solid;
+    border-radius:10px;
+    color:blueviolet;
+    text-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
+    box-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
+}
+
+input::placeholder{
+    text-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
+    color:rgba(137, 43, 226, 0.334);
+}
+#add-button{
+    font-size:200%;
+    color:blueviolet;
+    background-color:rgba(0, 0, 0, 0);
+    border: blueviolet;
+    border-style:solid;
+    border-radius:10px;
+    padding:10px;
+    text-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
+}
+
+#add-button:hover{
+    background-color:rgba(137, 43, 226, 0.245);;
+    color:rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    border-style:solid;
+    border-radius:10px;
+    box-shadow: 3px 2px 6px rgba(137, 43, 226, 0.727);
+
+}
