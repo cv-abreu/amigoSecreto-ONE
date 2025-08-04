@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>DESAFIO ONE: AMIGO SECRETO</title>
 
@@ -10,15 +11,14 @@
     <body>
         <div class="container">
             <h1>AMIGO SECRETO</h1>
-            <form>
+            <form id="form-nomes" method="POST" action="main.js">
                 <label ></label>
-                <input placeholder="Digite um nome">
-                <button type="submit" id="add-button">ADICIONAR</button>
+                <input type="text" id="input-nomes" placeholder="Digite um nome..."required>
+                <button type="submit" onclick="appendName()" id="add-button">ADICIONAR</button>
             </form>
-            
-            <ul>
-                <li></li>
-            </ul>
+
+            <h2>Lista de Itens</h2>
+            <ul id="lista"></ul>
             
         </div>
 
