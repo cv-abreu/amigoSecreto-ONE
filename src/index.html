@@ -6,23 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>DESAFIO ONE: AMIGO SECRETO</title>
-
     </head>
     <body>
         <div class="container">
             <h1>AMIGO SECRETO</h1>
-            <form id="form-nomes" method="POST" action="main.js">
-                <label ></label>
-                <input type="text" id="input-nomes" placeholder="Digite um nome..."required>
-                <button type="submit" onclick="appendName()" id="add-button">ADICIONAR</button>
-            </form>
-
-            <h2>Lista de Itens</h2>
-            <ul id="lista"></ul>
             
+            <label for="input-nomes">Nome</label>
+            <input type="text" id="input-nomes" placeholder="Digite um nome...">
+            <button id="add-button">ADICIONAR</button>
+            <button id="erase-button">LIMPAR</button>
+       
+        </div>
+        <h2>> NOMES</h2>
+        <ul id="lista-nomes"></ul>
+        <div class="sorteio">
+            <button id="sort-button"> SORTEAR</button>
+            <h3>AMIGO SECRETO</h3>
         </div>
 
-        <script href="main.js"></script>
+        <script src="main.js"></script>
 
     </body>
     
