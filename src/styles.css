@@ -93,6 +93,22 @@ input::placeholder{
 
 }
 
+.sorteio{
+    background-color:rgba(137, 43, 226, 0.474);
+    position:static;
+    width:50%;
+    height: 50%;
+    justify-self: end;
+    align-items: center;
+    border-radius:10px;
+}
+
+
+
+h4{
+    font-size:110%;
+}
+
 #sort-button{
     font-size:100%;
     color:blueviolet;
@@ -104,13 +120,4 @@ input::placeholder{
     text-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
 }
 
-
-.sorteio{
-    background-color:rgba(137, 43, 226, 0.474);
-    position:static;
-    width:50%;
-    height: 50%;
-    justify-self: end;
-    border-radius:10px;
-}
 

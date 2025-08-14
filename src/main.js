@@ -1,13 +1,17 @@
 const input = document.getElementById("input-nomes");
 const lista = document.getElementById("lista-nomes");
+const amigoSecreto = document.getElementeById("amigo-secreto");
 const botaoAdd = document.getElementById("add-button");
 const botaoErase = document.getElementById("erase-button");
+const botaoSort = document.getElementById("sort-button");
 
 let nomes = [];
 
 botaoAdd.addEventListener("click", adicionarNome);
 
 botaoErase.addEventListener("click", limparLista);
+
+botaoSort.addEventListener("click",sortearNome);
 
 window.addEventListener("load", () => {
   const nomesSalvos = localStorage.getItem("nomes");
@@ -34,6 +38,10 @@ function limparLista() {
   atualizarLista();
 }
 
+function sortearNome(){
+  const nomeSort = nomes.sort;
+  amigoSecreto.textContent = nomeSort;
+}
 
 function atualizarLista() {
   lista.innerHTML = "";
