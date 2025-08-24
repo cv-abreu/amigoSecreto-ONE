@@ -3,8 +3,7 @@ html{
     margin:0;
     overflow:scroll;
     height:auto;
-    background-image:url('background.png');
-    background-color:rgb(16, 14, 33);
+    background-color:rgb(0, 0, 0);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:white;
 }
@@ -13,10 +12,8 @@ html{
     position:static;
     justify-self:center;
     text-align:center;
-    background-color:rgba(0, 0, 0, 0.536);
     width:100%;
     padding:15px;
-    box-shadow: 2px 5px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 h1{
@@ -93,15 +90,7 @@ input::placeholder{
 
 }
 
-.sorteio{
-    background-color:rgba(137, 43, 226, 0.474);
-    position:static;
-    width:50%;
-    height: 50%;
-    justify-self: end;
-    align-items: center;
-    border-radius:10px;
-}
+
 
 
 
@@ -111,13 +100,27 @@ h4{
 
 #sort-button{
     font-size:100%;
-    color:blueviolet;
+    color:rgb(255, 255, 255);
     background-color:rgba(0, 0, 0, 0);
-    border: blueviolet;
+    border: rgb(255, 255, 255);
     border-style:solid;
     border-radius:10px;
     padding:10px;
-    text-shadow: 3px 2px 5px rgba(137, 43, 226, 0.727);
+    text-shadow: 3px 2px 5px rgba(251, 246, 255, 0.727);
 }
 
+.sorteio{
+    border:solid;
+    position:static;
+    font-size:30px;
+    width:auto;
+    height: auto;
+    justify-self:center;
+    align-items: center;
+    text-align:center;
+    padding:10px;
+}
 
+#amigo-secreto{
+    color:blueviolet;
+}

@@ -1,6 +1,6 @@
 const input = document.getElementById("input-nomes");
 const lista = document.getElementById("lista-nomes");
-const amigoSecreto = document.getElementeById("amigo-secreto");
+const amigoSecreto = document.getElementById("amigo-secreto");
 const botaoAdd = document.getElementById("add-button");
 const botaoErase = document.getElementById("erase-button");
 const botaoSort = document.getElementById("sort-button");
@@ -39,13 +39,17 @@ function limparLista() {
 }
 
 function sortearNome(){
-  const nomeSort = nomes.sort;
-  amigoSecreto.textContent = nomeSort;
+  if (nomes.length === 0) {
+    amigoSecreto.textContent = "Nenhum nome para sortear!";
+    return;
+  }
+  let indice = Math.floor(Math.random() * nomes.length);
+  let nomeSorteado = nomes[indice];
+  amigoSecreto.textContent = nomeSorteado;
 }
 
 function atualizarLista() {
   lista.innerHTML = "";
-
   nomes.forEach(function(nome) {
     const item = document.createElement("li");
     item.textContent = nome;
